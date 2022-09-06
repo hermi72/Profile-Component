@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --Dark-Cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Dark-Cyan);
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 1em;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.grey {
+    color: var(--Dark-gray);
+    font-weight: normal;
+}
+
+.size {
+    font-size: .7em;
+}
+
+.bg-pattern-top {
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+.bg-pattern-bottom {
+    position: absolute;
+    bottom: 0;
+    transform: translate(50%, 50%);
+}
+
+main {
+    margin: auto;
+    width: 70%;
+    max-width: 320px;
+    max-width: ; 
+    background-color: white;
+    border-radius: 10px;
+    z-index: 99;
+    position: relative;
+}
+
+#bgpc {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+    margin-top: -16%;
+}
+
+#profile {
+    width: 30%;
+    border-radius: 100px;
+    border: 5px solid white;
+    margin: auto;
+}
+
+.name {
+    text-align: center;
+    max-width: 150px;
+    margin: 3% auto 7%;
+}
+
+.flexbox {
+    display: flex;
+    text-align: center;
+    border-top: 1px solid var(--Dark-gray);
+    flex-wrap: nowrap;
+}
+
+.box {
+    width: 100%;
+    margin: 30px 2% 30px 2%;
+}
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.attribution { 
+    font-size: .5em; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(227, 22%, 92%); 
+}
+
+@media only screen and (max-width: 320px) {
+
+    .mobile-size {
+        font-size: .7em;
+    }
+
+    .size {
+        font-size: .5em;
+    }
+
+}
